@@ -59,25 +59,61 @@ def total_sum(*numbers):
 print(total_sum(1, 2, 3, 4, 5))
 
 
+# Kwargs (Arbitrary Keyword Arguments)
+def student_info(**details):
+    for key, value in details.items():
+        print(f"{key}: {value}")
 
 
+student_info(name="Mercy", age=22, course = "Data Science")
 
 
+# Lambda Functions
+#Adding two numbers
+add = lambda x, y: x + y
+print(add(4, 6))
 
 
+# Recursion functions
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n -1)
+
+print(factorial(5))
 
 
+# Functions with Lists
+def find_max(numbers):
+    return max(numbers)
+
+nums = [10, 25, 3, 67, 90]
+print(find_max(nums))
 
 
+# Functions with Lists
+def find_min(numbers):
+    return min(numbers)
+
+nums = [10, 25, 3, 67, 90]
+print(find_min(nums))
 
 
+# Functions with return values
+def get_details():
+    name = "Mercy"
+    age = 22
+    return name, age  #Returns as a tuple
+
+details = get_details()
+print(details)
 
 
-
-
-
-
-
+# Functions reduce code duplication and improve readability.
+# Use args for multiple positional arguments.
+# Use kwargs for multiple named arguments.
+# Use lambda for small, or e-line functions
+# Use recursion for problems like factorial,Fibonnaci, etc.
 
 
 
